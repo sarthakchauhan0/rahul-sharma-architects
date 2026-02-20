@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Sharma Architects</title>
+    <meta name="description" content="Crafting Future-Ready Spaces through Innovation & Nature.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">RSA.</a>
+        </div>
+        <div class="nav-links">
+            <a href="#about">Studio</a>
+            <a href="#projects">Projects</a>
+            <a href="#meta-vr" class="vr-link"><i class="ph ph-mask-happy"></i> Meta VR</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="menu-toggle">
+            <i class="ph ph-list"></i>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg parallax" style="background-image: url('assets/hero.png');"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content reveal-up">
+                <h1 class="hero-title">Rahul Sharma Architects</h1>
+                <p class="hero-subtitle">Crafting Future-Ready Spaces through Innovation & Nature.</p>
+            </div>
+            <div class="scroll-indicator">
+                <span class="line"></span>
+                <span>Scroll</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-padding" id="about">
+            <div class="container grid-2-col">
+                <div class="about-text reveal-up">
+                    <h2>Defining the geometry of tomorrow.</h2>
+                    <p>We blend minimalist elegance with uncompromising functionality to craft spaces that breathe.
+                        Rooted in profound respect for structure and nature.</p>
+                </div>
+                <div class="about-stats reveal-up delay-1">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Years of<br>Excellence</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Global</span>
+                        <span class="stat-label">Design<br>Standards</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Vastu</span>
+                        <span class="stat-label">Integrated<br>Luxury</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meta VR Section -->
+        <section class="meta-vr section-padding" id="meta-vr">
+            <div class="container text-center reveal-up">
+                <h2 class="section-title">Step Into Your Future Home.</h2>
+                <p class="section-desc">Experience your space before a single brick is laid. We provide immersive Meta
+                    VR renders, allowing you to walk through your future residence in a 1:1 scale immersive environment.
+                </p>
+
+                <div class="vr-slider-container reveal-up delay-1">
+                    <div class="vr-icon-pulse">
+                        <i class="ph ph-mask-happy"></i>
+                        <span>Wear the Headset</span>
+                    </div>
+                    <div class="slider-wrapper" id="slider">
+                        <!-- Before (Realistic) -->
+                        <img src="assets/vr-realistic.png" alt="Realistic VR Render" class="img-realistic">
+                        <!-- After (Wireframe) - Clip Path overlay -->
+                        <div class="slider-wireframe" id="slider-wireframe">
+                            <img src="assets/vr-wireframe.png" alt="Wireframe VR Render">
+                        </div>
+                        <!-- Slider UI Handle -->
+                        <div class="slider-handle" id="slider-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-btn"><i class="ph ph-arrows-out-line-horizontal"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio / Featured Projects -->
+        <section class="portfolio section-padding" id="projects">
+            <div class="container">
+                <div class="portfolio-header reveal-up">
+                    <h2 class="section-title">Selected Works</h2>
+                    <a href="#" class="view-all">View All Projects <i class="ph ph-arrow-right"></i></a>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item reveal-up">
+                        <div class="item-img-wrapper parallax-img-container">
+                            <img src="assets/portfolio-1.png" alt="Luxury Residence" class="parallax-img">
+                            <div class="item-overlay"></div>
+                        </div>
+                        <h3 class="item-title">Luxury Residences</h3>
+                    </div>
+
+                    <div class="portfolio-item reveal-up delay-1">
+                        <div class="item-img-wrapper parallax-img-container">
+                            <img src="assets/portfolio-2.png" alt="Modern Commercial Spaces" class="parallax-img">
+                            <div class="item-overlay"></div>
+                        </div>
+                        <h3 class="item-title">Modern Commercial Spaces</h3>
+                    </div>
+
+                    <div class="portfolio-item reveal-up delay-2">
+                        <div class="item-img-wrapper parallax-img-container">
+                            <img src="assets/portfolio-3.png" alt="Sustainable Urban Design" class="parallax-img">
+                            <div class="item-overlay"></div>
+                        </div>
+                        <h3 class="item-title">Sustainable Urban Design</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact & Footer -->
+    <footer class="footer section-padding" id="contact">
+        <div class="container grid-2-col footer-grid">
+            <div class="footer-info reveal-up">
+                <h2>Let's build<br>the extraordinary.</h2>
+                <div class="contact-details">
+                    <p>New Delhi, India</p>
+                    <p><a href="mailto:hello@rahulsharma.com">hello@rahulsharma.com</a></p>
+                    <p>+91 98765 43210</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="ph ph-instagram-logo"></i> Instagram</a>
+                    <a href="#"><i class="ph ph-linkedin-logo"></i> LinkedIn</a>
+                    <a href="#"><i class="ph ph-behance-logo"></i> Behance</a>
+                </div>
+            </div>
+            <div class="footer-form reveal-up delay-1">
+                <form class="minimal-form" action="mailto:rahuls.architect@gmail.com" method="post"
+                    enctype="text/plain">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Tell us about your project" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Inquiry <i class="ph ph-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rahul Sharma Architects. All rights reserved.</p>
+            <p>Designed with <i class="ph-fill ph-heart"></i> by Starky</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
